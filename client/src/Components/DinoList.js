@@ -2,10 +2,10 @@ import DinoItem from "./DinoItem";
 
 const DinoList = ({dinos}) => {
     
-    const dinosList = dinos.map((dino) => {
+    const dinosList = dinos.map((dino,index) => {
         return (
             <div>
-                <DinoItem dino={dino} key={dino._id}/>
+                <DinoItem dino={dino} key={index}/>
             </div>
         )
     });
