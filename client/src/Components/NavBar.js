@@ -8,9 +8,9 @@ return(
     
     
     <ul>
-        <li><Link to="/">Look up Dino</Link> </li>
+        <li><Link to="/">Home</Link> </li>
+        <li><Link to="/finddino">Look up Dino</Link> </li>
         <li><Link to="/randomdino">Random Dino</Link> </li>
-        <li><Link to="/">Learn about Dinos</Link> </li>
         <li><Link to="/dinolist">All Dinos</Link> </li> 
     </ul>
     
