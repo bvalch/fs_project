@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getDinos } from "../Components/dinoService";
 import DinoList from '../Components/DinoList';
+import NavBar from '../Components/NavBar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RandomDino from '../Components/RandomDino';
 
 
 
@@ -21,7 +24,15 @@ const TopContainer = () => {
     return(
         
         <>
-        <DinoList dinos={dinos}/>
+        <NavBar/>
+       
+
+        <Routes>
+            <Route path="/dinolist" element={<DinoList dinos={dinos}/>}/>
+            <Route path="/randomdino" element={<RandomDino dinos={dinos}/>}/>
+
+
+        </Routes>
         </>
         )
 
