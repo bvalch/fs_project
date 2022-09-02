@@ -1,7 +1,7 @@
-use dinosaursProject;
+use dinoProject;
 db.dropDatabase();
 
-db.dinosaurs.insertMany(
+db.dinos.insertMany(
     [
         {
             "name": "aardonyx",
