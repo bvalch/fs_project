@@ -11,34 +11,44 @@ import HomePage from '../Components/HomePage';
 
 const TopContainer = () => {
     const [dinos, setDinos] = useState([]);
+    const [randomDino, setRandomDino] = useState([]);
 
 
     useEffect(() => {
-        getDinos().then((data)=>setDinos(data));
+        getDinos().then((data) => setDinos(data));
     }, []);
 
 
+    const onRandomDino = () => {
+        const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
+        const randint = randomIndex()
+        setRandomDino([dinos[randint]])
 
 
 
 
-    
-    return(
-        
+    }
+
+
+
+
+
+    return (
+
         <>
-        <NavBar/>
-       
-
-        <Routes>
-            <Route path="/dinolist" element={<DinoList dinos={dinos}/>}/>
-            <Route path="/randomdino" element={<RandomDino dinos={dinos}/>}/>
-            <Route path="/finddino" element={<FindDino dinos={dinos}/>}/>
-            <Route path="/" element={<HomePage />}/>
+            <NavBar />
 
 
-        </Routes>
+            <Routes>
+                <Route path="/dinolist" element={<DinoList dinos={dinos} />} />
+                <Route path="/randomdino" element={<RandomDino randomDino={randomDino} onRandomDino={onRandomDino} />} />
+                <Route path="/finddino" element={<FindDino dinos={dinos} />} />
+                <Route path="/" element={<HomePage />} />
+
+
+            </Routes>
         </>
-        )
+    )
 
 
 };
