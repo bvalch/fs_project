@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getDinos } from "../Components/dinoService";
+import DinoList from '../Components/DinoList';
 
 
 const TopContainer = () => {
@@ -15,7 +16,7 @@ const TopContainer = () => {
     return(
         
         <>
-        
+        <DinoList dinos={dinos}/>
         </>
         )
 
