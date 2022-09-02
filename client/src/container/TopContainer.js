@@ -3,14 +3,19 @@ import { getDinos } from "../Components/dinoService";
 import DinoList from '../Components/DinoList';
 
 
+
 const TopContainer = () => {
-    const [dinos, setDinos] = useState([])
+    const [dinos, setDinos] = useState([]);
 
 
     useEffect(() => {
         getDinos().then((data)=>setDinos(data));
+    }, []);
 
-    }, [])
+
+
+
+
 
     
     return(
