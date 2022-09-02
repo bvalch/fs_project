@@ -1,6 +1,6 @@
 import DinoItem from "./DinoItem";
 
-const DinoItem = ({dinos}) => {
+const DinoList = ({dinos}) => {
     
     const dinosList = dinos.map((dino) => {
         return (
@@ -17,4 +17,4 @@ const DinoItem = ({dinos}) => {
     )
 }
 
-export default DinoItem;
+export default DinoList;
