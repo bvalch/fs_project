@@ -6,7 +6,7 @@ const DinoList = ({dinos}) => {
         return (<div><DinoItem dino={dino} key={index}/></div>
         )
     });
-    console.log(dinosList)
+    // console.log(dinosList)
 
     return (
         <>

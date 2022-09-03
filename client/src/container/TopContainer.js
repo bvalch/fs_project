@@ -12,25 +12,35 @@ import HomePage from '../Components/HomePage';
 const TopContainer = () => {
     const [dinos, setDinos] = useState([]);
     const [randomDino, setRandomDino] = useState([]);
-
+    const [filteredDino, setFilteredDino] = useState([])
+    const [filterTrigger,setFilterTrigger]=useState()
 
     useEffect(() => {
         getDinos().then((data) => setDinos(data));
     }, []);
 
+    const reloadData = () => {
+        getDinos().then((data) => setDinos(data))
+    }
 
     const onRandomDino = () => {
         const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
         const randint = randomIndex()
         setRandomDino([dinos[randint]])
+    }
 
-
-
+    const onTypeSelected = (type) => {
+        if (type === 'all') { setFilterTrigger(false) } else {
+            
+            const filteredByType = dinos.filter((dino) => dino.type == type)
+            setFilteredDino(filteredByType)
+            setFilterTrigger(true) 
+        }
 
     }
 
 
-
+    
 
 
     return (
@@ -42,7 +52,22 @@ const TopContainer = () => {
             <Routes>
                 <Route path="/dinolist" element={<DinoList dinos={dinos} />} />
                 <Route path="/randomdino" element={<RandomDino randomDino={randomDino} onRandomDino={onRandomDino} />} />
-                <Route path="/finddino" element={<FindDino dinos={dinos} />} />
+
+
+
+
+                {<Route path="/finddino"
+                    element={<FindDino onTypeSelected={onTypeSelected}
+                        dinos={filterTrigger ? filteredDino : dinos} />}
+
+
+                />
+
+                }
+
+
+
+
                 <Route path="/" element={<HomePage />} />
 
 
