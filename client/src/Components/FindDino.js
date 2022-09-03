@@ -23,7 +23,7 @@ const FindDino = ({ dinos, onTypeSelected }) => {
             onTypeSelected(event.target.value)
         }
 
-        const showDinos = dinos.map((dino) => { return <DinoItem dino={dino} /> })
+        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index}/> })
 
 
 
