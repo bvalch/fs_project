@@ -11,10 +11,6 @@ const RandomDino = ({ randomDino,onRandomDino }) => {
 
         const handleRandomDino = () => { 
             onRandomDino();
-            
-            
-           
-           
         }
 
 
