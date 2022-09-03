@@ -19,9 +19,10 @@ const TopContainer = () => {
         getDinos().then((data) => setDinos(data));
     }, []);
 
-    const reloadData = () => {
-        getDinos().then((data) => setDinos(data))
-    }
+    // redundant at this stage
+    // const reloadData = () => {
+    //     getDinos().then((data) => setDinos(data))
+    // }
 
     const onRandomDino = () => {
         const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
@@ -29,11 +30,23 @@ const TopContainer = () => {
         setRandomDino([dinos[randint]])
     }
 
-    const onTypeSelected = (type) => {
-        if (type === 'all') { setFilterTrigger(false) } else {
-            
-            const filteredByType = dinos.filter((dino) => dino.type == type)
-            setFilteredDino(filteredByType)
+    // const onTypeSelected = (type) => {
+    //     if (type === 'all') { setFilterTrigger(false) } else {
+
+    //         const filteredByType = dinos.filter((dino) => dino.type == type)
+    //         setFilteredDino(filteredByType)
+    //         setFilterTrigger(true) 
+    //     }
+
+    // }
+
+    const onCriteriaSelected = (filterCriteria) => {
+        const [key,value]=filterCriteria.split(',')
+        console.log(key)
+        console.log(value)
+        if (key === 'all') { setFilterTrigger(false) } else {
+            const filteredByCriteria = dinos.filter((dino) => dino[key] === value)
+            setFilteredDino(filteredByCriteria)
             setFilterTrigger(true) 
         }
 
@@ -57,7 +70,7 @@ const TopContainer = () => {
 
 
                 {<Route path="/finddino"
-                    element={<FindDino onTypeSelected={onTypeSelected}
+                    element={<FindDino onCriteriaSelected={onCriteriaSelected}
                         dinos={filterTrigger ? filteredDino : dinos} />}
 
 
