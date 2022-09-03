@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import DinoItem from './DinoItem';
-const FindDino = ({ dinos, onCriteriaSelected }) => {
+const FindDino = ({ dinos, onCriteriaSelected,onSearchInput }) => {
     const [filterType, setFilterType] = useState([]);
     const [filterDiet, setFilterDiet] = useState([]);
+    const [searchCriteria, setSearchCriteria] = useState();
 
     useEffect(() => {
         loadFIlters();
@@ -17,9 +18,9 @@ const FindDino = ({ dinos, onCriteriaSelected }) => {
     }
 
     if (dinos === null) { <p>Loading</p> } else {
-        const dinoTypes = filterType.map((type, index) => { return <option key={index} value={['type',type]}>{type}</option> })
+        const dinoTypes = filterType.map((type, index) => { return <option key={index} value={['type', type]}>{type}</option> })
 
-        const dinoDiet = filterDiet.map((diet, index) => { return <option key={index} value={['diet',diet]}>{diet}</option> })
+        const dinoDiet = filterDiet.map((diet, index) => { return <option key={index} value={['diet', diet]}>{diet}</option> })
 
 
 
@@ -28,10 +29,20 @@ const FindDino = ({ dinos, onCriteriaSelected }) => {
             onCriteriaSelected(event.target.value)
         }
 
-        const handleDietChange=(event)=>{
+        const handleDietChange = (event) => {
             onCriteriaSelected(event.target.value)
         }
-        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index}/> })
+
+        const handleSubmit = (event) => {
+            event.preventDefault();
+        }
+        const handleSearchTerm = (event) => {
+            onSearchInput(event.target.value);
+
+        }
+
+
+        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index} /> })
 
 
 
@@ -54,6 +65,11 @@ const FindDino = ({ dinos, onCriteriaSelected }) => {
                     <option value="['all',all]">Show All</option>
                     {dinoDiet}
                 </select>
+
+                <form type="text" onSubmit={handleSubmit} >
+                    <input value={searchCriteria} placeholder="search dinos" onChange={handleSearchTerm}></input>
+
+                </form>
 
 
                 {showDinos}

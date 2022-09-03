@@ -19,7 +19,7 @@ const TopContainer = () => {
         getDinos().then((data) => setDinos(data));
     }, []);
 
-    // redundant at this stage
+    // redundant at this stage,could be useful later
     // const reloadData = () => {
     //     getDinos().then((data) => setDinos(data))
     // }
@@ -30,20 +30,9 @@ const TopContainer = () => {
         setRandomDino([dinos[randint]])
     }
 
-    // const onTypeSelected = (type) => {
-    //     if (type === 'all') { setFilterTrigger(false) } else {
-
-    //         const filteredByType = dinos.filter((dino) => dino.type == type)
-    //         setFilteredDino(filteredByType)
-    //         setFilterTrigger(true) 
-    //     }
-
-    // }
 
     const onCriteriaSelected = (filterCriteria) => {
         const [key,value]=filterCriteria.split(',')
-        console.log(key)
-        console.log(value)
         if (key === 'all') { setFilterTrigger(false) } else {
             const filteredByCriteria = dinos.filter((dino) => dino[key] === value)
             setFilteredDino(filteredByCriteria)
@@ -51,6 +40,14 @@ const TopContainer = () => {
         }
 
     }
+
+    const onSearchInput=async (searchTerm)=>{
+        const searchDino=dinos.filter((dino)=>{return dino.name.toLowerCase().includes(searchTerm.toLowerCase())})
+        await setFilteredDino(searchDino)
+        await setFilterTrigger(true)
+    
+    }
+        
 
 
     
@@ -71,19 +68,12 @@ const TopContainer = () => {
 
                 {<Route path="/finddino"
                     element={<FindDino onCriteriaSelected={onCriteriaSelected}
-                        dinos={filterTrigger ? filteredDino : dinos} />}
-
-
+                        dinos={filterTrigger ? filteredDino : dinos} onSearchInput={onSearchInput} />}
                 />
 
                 }
 
-
-
-
                 <Route path="/" element={<HomePage />} />
-
-
             </Routes>
         </>
     )
