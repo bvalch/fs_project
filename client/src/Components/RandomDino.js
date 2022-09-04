@@ -2,11 +2,11 @@ import React from 'react';
 import DinoItem from './DinoItem';
 
 
-const RandomDino = ({ randomDino,onRandomDino }) => {
+const RandomDino = ({ randomDino,onRandomDino,onFavoriteSelect,onFavoriteDelete }) => {
     if (randomDino === null) { <p>Loading</p> } else {
 
         const rDino = randomDino.map((dino, index) => {
-            return <DinoItem key={index} dino={dino} />
+            return <DinoItem key={index} dino={dino} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />
         })
 
         const handleRandomDino = () => { 

@@ -1,10 +1,10 @@
 import DinoItem from "./DinoItem";
 import './DinoList.css';
 
-const DinoList = ({dinos}) => {
+const DinoList = ({dinos,onFavoriteSelect,onFavoriteDelete}) => {
     
     const dinosList = dinos.map((dino,index) => {
-        return (<DinoItem dino={dino} key={index}/>
+        return (<DinoItem dino={dino} key={index} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete}/>
         )
     });
     // console.log(dinosList)
