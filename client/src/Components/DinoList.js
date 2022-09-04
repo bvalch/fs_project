@@ -1,4 +1,5 @@
 import DinoItem from "./DinoItem";
+import './DinoList.css';
 
 const DinoList = ({dinos}) => {
     
@@ -9,9 +10,12 @@ const DinoList = ({dinos}) => {
     // console.log(dinosList)
 
     return (
-        <>
-            {dinosList}
-        </>
+
+        <div className="list-container">
+            <div className="list">
+                {dinosList}
+            </div>
+        </div>
     )
 }
 

@@ -1,0 +1,21 @@
+.list-container {
+    background-color: olive;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+}
+
