@@ -1,5 +1,6 @@
 .dino-image {
     border: 2px solid greenyellow;
+    border-radius: 10px;
     height: 250px;
     width: 300px;
 
