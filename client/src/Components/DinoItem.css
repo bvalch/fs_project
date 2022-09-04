@@ -13,8 +13,10 @@
     padding: 12px;
     flex-basis: 0;
     border-radius: 8px;
-    min-height: 610px;
+    min-height: 630px;
     background-repeat: no-repeat;
-    background-size: 22em 23em;
+    background-size: cover;
+    color: white;
     
 }
+
