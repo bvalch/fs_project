@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import DinoItem from './DinoItem';
-const FindDino = ({ dinos, onCriteriaSelected,onSearchInput }) => {
+const FindDino = ({ dinos, onCriteriaSelected,onSearchInput,onFavoriteSelect,onFavoriteDelete }) => {
     const [filterType, setFilterType] = useState([]);
     const [filterDiet, setFilterDiet] = useState([]);
     const [searchCriteria, setSearchCriteria] = useState();
@@ -42,7 +42,7 @@ const FindDino = ({ dinos, onCriteriaSelected,onSearchInput }) => {
         }
 
 
-        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index} /> })
+        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} /> })
 
 
 

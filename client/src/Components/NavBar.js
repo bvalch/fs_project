@@ -12,6 +12,7 @@ return(
         <li><Link to="/finddino">Look up Dino</Link> </li>
         <li><Link to="/randomdino">Random Dino</Link> </li>
         <li><Link to="/dinolist">All Dinos</Link> </li> 
+        <li><Link to="/favdinos">My Dinos</Link> </li> 
     </ul>
     
     )

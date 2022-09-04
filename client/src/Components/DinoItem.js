@@ -1,6 +1,25 @@
 import './DinoItem.css';
+import React from 'react'
+import { postFavDino,delFavDino } from "./favService"
+import { updateDino } from './dinoService';
 
-const DinoItem = ({dino}) => {
+const DinoItem = ({ dino, onFavoriteSelect,onFavoriteDelete }) => {
+
+    const handleButtonClick = async () => {
+        dino.favorite = true
+        await updateDino(dino._id, { favorite: true });
+        await postFavDino(dino);
+        onFavoriteSelect(dino);
+    }
+
+    const handleButtonRemove = async () => {
+        // updates in main db
+        await updateDino(dino._id,{favorite:false});
+        // deletes from favs db
+        await delFavDino(dino._id)
+        onFavoriteDelete(dino._id)
+    }
+
     return (
         <div className="card">
             <h1>{dino.name}</h1>
@@ -11,7 +30,9 @@ const DinoItem = ({dino}) => {
             <p>{dino.diet}</p>
             <h3>Period:</h3>
             <p>{dino.period}</p>
-            </div>
+            {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
+        </div>
+
     )
 }
 
