@@ -1,3 +1,5 @@
+import './DinoItem.css';
+
 const DinoItem = ({dino}) => {
     return (
         <div>

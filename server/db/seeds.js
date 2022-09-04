@@ -14,7 +14,7 @@ db.dinos.insertMany(
             named_by: "Yates Bonnan Neveling Chinsamy and Blackbeard 2010 (2009)",
             species: "celestae",
             link: "https://www.nhm.ac.uk/discover/dino-directory/aardonyx.html",
-            image: "images/aardonyx.jpeg"
+            image: "images/aardonyx.png"
         },
         {
             name: "Abelisaurus",
@@ -27,7 +27,7 @@ db.dinos.insertMany(
             named_by: "Bonaparte and Novas (1985)",
             species: "comahuensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/abelisaurus.html",
-            image: "images/abeilosaurus.jpeg"
+            image: "images/abelisaurus.png"
         },
         {
             name: "Achelousaurus",
@@ -40,7 +40,7 @@ db.dinos.insertMany(
             named_by: "Sampson  (1995)",
             species: "horneri",
             link: "https://www.nhm.ac.uk/discover/dino-directory/achelousaurus.html",
-            image: "images/achelousaurus.jpeg"
+            image: "images/achelousaurus.png"
         },
         {
             name: "Achillobator",
@@ -53,7 +53,7 @@ db.dinos.insertMany(
             named_by: "Perle Norell and Clark (1999)",
             species: "giganteus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/achillobator.html",
-            image: "images/achillobator.jpeg"
+            image: "images/achillobator.png"
         },
         {
             name: "Acrocanthosaurus",
@@ -66,10 +66,10 @@ db.dinos.insertMany(
             named_by: "Stovall and Langston (1950)",
             species: "atokensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/acrocanthosaurus.html",
-            image: "images/acrocanthosaurus.jpeg"
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "allosaurus",
+            name: "Allosaurus",
             diet: "carnivorous",
             period: "Late Jurassic 156-144 million years ago",
             lived_in: "USA",
@@ -79,10 +79,10 @@ db.dinos.insertMany(
             named_by: "Marsh (1877)",
             species: "fragilis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "arrhinoceratops",
+            name: "Arrhinoceratops",
             diet: "herbivorous",
             period: "Late Cretaceous 72-67 million years ago",
             lived_in: "Canada",
@@ -92,10 +92,10 @@ db.dinos.insertMany(
             named_by: "Parks (1925)",
             species: "brachyops",
             link: "https://www.nhm.ac.uk/discover/dino-directory/arrhinoceratops.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "bambiraptor",
+            name: "Bambiraptor",
             diet: "carnivorous",
             period: "Late Cretaceous 84-71 million years ago",
             lived_in: "USA",
@@ -105,10 +105,10 @@ db.dinos.insertMany(
             named_by: "Burnham Derstler Currie Bakker Zhou and Ostrom (2000)",
             species: "feinbergorum",
             link: "https://www.nhm.ac.uk/discover/dino-directory/bambiraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "brachiosaurus",
+            name: "Brachiosaurus",
             diet: "herbivorous",
             period: "Late Jurassic 155-140 million years ago",
             lived_in: "USA",
@@ -118,10 +118,10 @@ db.dinos.insertMany(
             named_by: "Riggs (1903)",
             species: "altithorax",
             link: "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "centrosaurus",
+            name: "Centrosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 76-74 million years ago",
             lived_in: "Canada",
@@ -131,10 +131,10 @@ db.dinos.insertMany(
             named_by: "apertus",
             species: "",
             link: "https://www.nhm.ac.uk/discover/dino-directory/centrosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "chasmosaurus",
+            name: "Chasmosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 76-74 million years ago",
             lived_in: "Canada",
@@ -144,10 +144,10 @@ db.dinos.insertMany(
             named_by: "belli",
             species: "",
             link: "https://www.nhm.ac.uk/discover/dino-directory/chasmosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "chungkingosaurus",
+            name: "Chungkingosaurus",
             diet: "herbivorous",
             period: "Late Jurassic 159-142 million years ago",
             lived_in: "China",
@@ -157,10 +157,10 @@ db.dinos.insertMany(
             named_by: "Dong Zhou and Zhang (1983)",
             species: "jiangbeiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/chungkingosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "diplodocus",
+            name: "Diplodocus",
             diet: "herbivorous",
             period: "Late Jurassic 155-145 million years ago",
             lived_in: "USA",
@@ -170,10 +170,10 @@ db.dinos.insertMany(
             named_by: "Marsh (1878)",
             species: "longus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "dryptosaurus",
+            name: "Dryptosaurus",
             diet: "carnivorous",
             period: "Late Cretaceous 84-65 million years ago",
             lived_in: "USA",
@@ -183,10 +183,10 @@ db.dinos.insertMany(
             named_by: "Cope (1866)",
             species: "aquilunguis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/dryptosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "einiosaurus",
+            name: "Einiosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 74 million years ago",
             lived_in: "USA",
@@ -196,10 +196,10 @@ db.dinos.insertMany(
             named_by: "Sampson  (1995)",
             species: "procurvicornis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/einiosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "eoraptor",
+            name: "Eoraptor",
             diet: "carnivorous",
             period: "Late Triassic 228 million years ago",
             lived_in: "Argentina",
@@ -209,10 +209,10 @@ db.dinos.insertMany(
             named_by: "Sereno Forster Rogers and Monetta (1993)",
             species: "lunensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/eoraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "fukuiraptor",
+            name: "Fukuiraptor",
             diet: "carnivorous",
             period: "Early Cretaceous 121-99 million years ago",
             lived_in: "Japan",
@@ -222,10 +222,10 @@ db.dinos.insertMany(
             named_by: "Azuma and Currie (2000)",
             species: "kitadaniensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/fukuiraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "gasosaurus",
+            name: "Gasosaurus",
             diet: "carnivorous",
             period: "Mid Jurassic 170-160 million years ago",
             lived_in: "China",
@@ -235,10 +235,10 @@ db.dinos.insertMany(
             named_by: "Dong and Tang (1985)",
             species: "constructus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/gasosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "giganotosaurus",
+            name: "Giganotosaurus",
             diet: "carnivorous",
             period: "Early Cretaceous 112-90 million years ago",
             lived_in: "Argentina",
@@ -248,10 +248,10 @@ db.dinos.insertMany(
             named_by: "Coria and Salgado (1995)",
             species: "carolinii",
             link: "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "gorgosaurus",
+            name: "Gorgosaurus",
             diet: "carnivorous",
             period: "Late Cretaceous 80-73 million years ago",
             lived_in: "USA",
@@ -261,10 +261,10 @@ db.dinos.insertMany(
             named_by: "Lamb (1914)",
             species: "libratus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/gorgosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "hylaeosaurus",
+            name: "Hylaeosaurus",
             diet: "herbivorous",
             period: "Early Cretaceous 150-135 million years ago",
             lived_in: "United Kingdom",
@@ -274,10 +274,10 @@ db.dinos.insertMany(
             named_by: "Mantell (1833)",
             species: "armatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/hylaeosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "iguanodon",
+            name: "Iguanodon",
             diet: "herbivorous",
             period: "Early Cretaceous 140-110 million years ago",
             lived_in: "United Kingdom",
@@ -287,10 +287,10 @@ db.dinos.insertMany(
             named_by: "Boulenger and van Beneden (1881)",
             species: "bernissartensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/iguanodon.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "irritator",
+            name: "Irritator",
             diet: "carnivorous",
             period: "Early Cretaceous 112-99 million years ago",
             lived_in: "Brazil",
@@ -300,10 +300,10 @@ db.dinos.insertMany(
             named_by: "Martill Cruickshank Frey Small and Clarke (1996)",
             species: "challengeri",
             link: "https://www.nhm.ac.uk/discover/dino-directory/irritator.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "juravenator",
+            name: "Juravenator",
             diet: "carnivorous",
             period: "Late Jurassic 154-151 million years ago",
             lived_in: "Germany",
@@ -313,10 +313,10 @@ db.dinos.insertMany(
             named_by: "G\u00f6hlich &amp; Chiappe (2006)",
             species: "starki",
             link: "https://www.nhm.ac.uk/discover/dino-directory/juravenator.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "khaan",
+            name: "Khaan",
             diet: "omnivorous",
             period: "Late Cretaceous 81-75 million years ago",
             lived_in: "Mongolia",
@@ -326,10 +326,10 @@ db.dinos.insertMany(
             named_by: "Clark Norell and Barsbold (2001)",
             species: "mckennai",
             link: "https://www.nhm.ac.uk/discover/dino-directory/khaan.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "leptoceratops",
+            name: "Leptoceratops",
             diet: "herbivorous",
             period: "Late Cretaceous 67-65 million years ago",
             lived_in: "USA",
@@ -339,10 +339,10 @@ db.dinos.insertMany(
             named_by: "Brown (1914)",
             species: "gracilis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/leptoceratops.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "liliensternus",
+            name: "Liliensternus",
             diet: "carnivorous",
             period: "Late Triassic 205-202 million years ago",
             lived_in: "Germany",
@@ -352,10 +352,10 @@ db.dinos.insertMany(
             named_by: "Huene (1934)",
             species: "liliensterni",
             link: "https://www.nhm.ac.uk/discover/dino-directory/liliensternus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "lurdusaurus",
+            name: "Lurdusaurus",
             diet: "herbivorous",
             period: "Early Cretaceous 121-112 million years ago",
             lived_in: "Niger",
@@ -365,10 +365,10 @@ db.dinos.insertMany(
             named_by: "Taquet &amp; Russell (1999)",
             species: "arenatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/lurdusaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "magyarosaurus",
+            name: "Magyarosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 71-65 million years ago",
             lived_in: "Romania",
@@ -378,10 +378,10 @@ db.dinos.insertMany(
             named_by: "Nopcsa (1915)",
             species: "dacus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/magyarosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "megalosaurus",
+            name: "Megalosaurus",
             diet: "carnivorous",
             period: "Mid Jurassic 170-155 million years ago",
             lived_in: "United Kingdom",
@@ -391,10 +391,10 @@ db.dinos.insertMany(
             named_by: "Ritgen (1826)",
             species: "bucklandii",
             link: "https://www.nhm.ac.uk/discover/dino-directory/megalosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "metriacanthosaurus",
+            name: "Metriacanthosaurus",
             diet: "carnivorous",
             period: "Late Jurassic 159-154 million years ago",
             lived_in: "United Kingdom",
@@ -404,10 +404,10 @@ db.dinos.insertMany(
             named_by: "Walker (1964)",
             species: "parkeri",
             link: "https://www.nhm.ac.uk/discover/dino-directory/metriacanthosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "microceratus",
+            name: "Microceratus",
             diet: "herbivorous",
             period: "Late Cretaceous 86-66 million years ago",
             lived_in: "Mongolia",
@@ -417,10 +417,10 @@ db.dinos.insertMany(
             named_by: "Bohlin (1953)",
             species: "gobiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/microceratus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "microraptor",
+            name: "Microraptor",
             diet: "carnivorous",
             period: "Early Cretaceous 125-122 million years ago",
             lived_in: "China",
@@ -430,10 +430,10 @@ db.dinos.insertMany(
             named_by: "Xu Zhou and Wang (2000)",
             species: "zhaoianus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/microraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "monolophosaurus",
+            name: "Monolophosaurus",
             diet: "carnivorous",
             period: "Mid Jurassic 180-159 million years ago",
             lived_in: "China",
@@ -443,10 +443,10 @@ db.dinos.insertMany(
             named_by: "Zhao and Currie (1993)",
             species: "jiangi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/monolophosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "nemegtosaurus",
+            name: "Nemegtosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 72-68 million years ago",
             lived_in: "Mongolia",
@@ -456,10 +456,10 @@ db.dinos.insertMany(
             named_by: "Nowinski (1971)",
             species: "mongoliensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/nemegtosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "nomingia",
+            name: "Nomingia",
             diet: "omnivorous",
             period: "Late Cretaceous 72-68 million years ago",
             lived_in: "Mongolia",
@@ -469,10 +469,10 @@ db.dinos.insertMany(
             named_by: "Barsbold Osm\u00f3lska Watabe Currie and Tsogtbaatar (2000)",
             species: "gobiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/nomingia.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "ouranosaurus",
+            name: "Ouranosaurus",
             diet: "herbivorous",
             period: "Early Cretaceous 115-100 million years ago",
             lived_in: "Niger",
@@ -482,10 +482,10 @@ db.dinos.insertMany(
             named_by: "Taquet (1976)",
             species: "nigeriensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/ouranosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "pachyrhinosaurus",
+            name: "Pachyrhinosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 76-74 million years ago",
             lived_in: "Canada",
@@ -495,10 +495,10 @@ db.dinos.insertMany(
             named_by: "Sternberg (1950)",
             species: "canadensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/pachyrhinosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "panoplosaurus",
+            name: "Panoplosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 79-75 million years ago",
             lived_in: "USA",
@@ -508,10 +508,10 @@ db.dinos.insertMany(
             named_by: "Lambe (1919)",
             species: "mirus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/panoplosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "patagosaurus",
+            name: "Patagosaurus",
             diet: "herbivorous",
             period: "Mid Jurassic 164-159 million years ago",
             lived_in: "Argentina",
@@ -521,10 +521,10 @@ db.dinos.insertMany(
             named_by: "Bonaparte (1979)",
             species: "fariasi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/patagosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "saltopus",
+            name: "Saltopus",
             diet: "carnivorous",
             period: "Late Triassic 221-210 million years ago",
             lived_in: "United Kingdom",
@@ -534,10 +534,10 @@ db.dinos.insertMany(
             named_by: "Huene (1910)",
             species: "elginensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/saltopus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "sarcosaurus",
+            name: "Sarcosaurus",
             diet: "carnivorous",
             period: "Early Jurassic 202-195 million years ago",
             lived_in: "United Kingdom",
@@ -547,10 +547,10 @@ db.dinos.insertMany(
             named_by: "Andrews (1921)",
             species: "woodi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/sarcosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "sinraptor",
+            name: "Sinraptor",
             diet: "carnivorous",
             period: "Mid Jurassic 169-142 million years ago",
             lived_in: "China",
@@ -560,10 +560,10 @@ db.dinos.insertMany(
             named_by: "Gao (1992)",
             species: "hepingensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/sinraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "stegosaurus",
+            name: "Stegosaurus",
             diet: "herbivorous",
             period: "Late Jurassic 155-145 million years ago",
             lived_in: "USA",
@@ -573,10 +573,10 @@ db.dinos.insertMany(
             named_by: "Marsh (1877)",
             species: "armatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "styracosaurus",
+            name: "Styracosaurus",
             diet: "herbivorous",
             period: "Late Cretaceous 76-70 million years ago",
             lived_in: "USA",
@@ -586,10 +586,10 @@ db.dinos.insertMany(
             named_by: "Lambe (1913)",
             species: "albertensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/styracosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "triceratops",
+            name: "Triceratops",
             diet: "herbivorous",
             period: "Late Cretaceous 68-66 million years ago",
             lived_in: "USA",
@@ -599,10 +599,10 @@ db.dinos.insertMany(
             named_by: "Marsh (1889)",
             species: "horridus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "tyrannosaurus",
+            name: "Tyrannosaurus",
             diet: "carnivorous",
             period: "Late Cretaceous 68-66 million years ago",
             lived_in: "USA",
@@ -612,10 +612,10 @@ db.dinos.insertMany(
             named_by: "Osborn (1905)",
             species: "rex",
             link: "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
         {
-            name: "velociraptor",
+            name: "Velociraptor",
             diet: "carnivorous",
             period: "Late Cretaceous 74-70 million years ago",
             lived_in: "Mongolia",
@@ -625,7 +625,7 @@ db.dinos.insertMany(
             named_by: "Osborn (1924)",
             species: "mongoliensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
-            image: ""
+            image: "images/acrocanthosaurus.png"
         },
 
     ])
