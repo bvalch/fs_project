@@ -14,7 +14,10 @@ MongoClient.connect("mongodb://127.0.0.1:27017", { useUnifiedTopology: true })
         const db = client.db('dinoProject');
         const dinosCollection = db.collection('dinos');
         const dinosRouter = createRouter(dinosCollection);
+        const favDinoCollection=db.collection('favdino')
+        const favDinosRouter=createRouter(favDinoCollection)
         app.use("/api/dinos", dinosRouter)
+        app.use("/api/favdino", favDinosRouter)
 
 
     }).catch((error) => console.log(error))
