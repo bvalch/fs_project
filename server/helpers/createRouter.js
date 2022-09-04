@@ -1,5 +1,5 @@
 const express = require('express');
-const ObjectID = require('mongodb').ObjectID;
+const ObjectId = require('mongodb').ObjectID;
 
 const createRouter = function (collection) {
 
@@ -18,7 +18,7 @@ const createRouter = function (collection) {
   router.get('/:id', (req, res) => {
     const id = req.params.id;
     collection
-      .findOne({ _id: ObjectID(id) })
+      .findOne({ _id: ObjectId(id) })
       .then((doc) => res.json(doc))
       .catch((err) => {
         console.error(err);
@@ -29,7 +29,11 @@ const createRouter = function (collection) {
 
   router.post('/',(req,res)=>{
     const dinoToAdd=req.body;
-    collection.insertOne(dinoToAdd)
+    const id = (req.body._id)
+    // console.log (id)
+    console.log(ObjectId(id))
+    console.log(dinoToAdd)
+    collection.insertOne(dinoToAdd,dinoToAdd._id=ObjectId(id))
     .then(result=>res.json(result.ops[0]))
     .catch((err)=>{
     console.log(err);
