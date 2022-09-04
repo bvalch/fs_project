@@ -27,21 +27,36 @@ const createRouter = function (collection) {
       });
   });
 
-  router.post('/',(req,res)=>{
-    const dinoToAdd=req.body;
+  router.post('/', (req, res) => {
+    const dinoToAdd = req.body;
     const id = (req.body._id)
-    // console.log (id)
-    console.log(ObjectId(id))
-    console.log(dinoToAdd)
-    collection.insertOne(dinoToAdd,dinoToAdd._id=ObjectId(id))
-    .then(result=>res.json(result.ops[0]))
-    .catch((err)=>{
-    console.log(err);
-    res.status(500)
-    res.json({status:500,error:err})
-    })
-  
-  
+    collection.insertOne(dinoToAdd, dinoToAdd._id = ObjectId(id))
+      .then(result => res.json(result.ops[0]))
+      .catch((err) => {
+        console.log(err);
+        res.status(500)
+        res.json({ status: 500, error: err })
+      });
+
+
+  });
+
+  router.put("/:id", (req, res) => {
+
+
+    const updateDino = req.body;
+    const id = ObjectId(req.params.id)
+    console.log(id)
+    console.log(updateDino)
+    collection.updateOne({_id:id},{$set:updateDino})
+    .then((result) => res.json(result))
+            .catch((err) => {
+                console.log(err);
+                res.status(500);
+                res.json({ status: 500, error: err })
+            });
+
+
   })
 
   return router;
