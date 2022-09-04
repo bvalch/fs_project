@@ -92,7 +92,7 @@ db.dinos.insertMany(
             named_by: "Parks (1925)",
             species: "brachyops",
             link: "https://www.nhm.ac.uk/discover/dino-directory/arrhinoceratops.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/arrhinoceratops.png"
         },
         {
             name: "Bambiraptor",
@@ -105,7 +105,7 @@ db.dinos.insertMany(
             named_by: "Burnham Derstler Currie Bakker Zhou and Ostrom (2000)",
             species: "feinbergorum",
             link: "https://www.nhm.ac.uk/discover/dino-directory/bambiraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/bambiraptor.png"
         },
         {
             name: "Brachiosaurus",
@@ -118,7 +118,7 @@ db.dinos.insertMany(
             named_by: "Riggs (1903)",
             species: "altithorax",
             link: "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/brachiosaurus.png"
         },
         {
             name: "Centrosaurus",
@@ -131,7 +131,7 @@ db.dinos.insertMany(
             named_by: "apertus",
             species: "",
             link: "https://www.nhm.ac.uk/discover/dino-directory/centrosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/centrosaurus.png"
         },
         {
             name: "Chasmosaurus",
@@ -144,7 +144,7 @@ db.dinos.insertMany(
             named_by: "belli",
             species: "",
             link: "https://www.nhm.ac.uk/discover/dino-directory/chasmosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/chasmosaurus.png"
         },
         {
             name: "Chungkingosaurus",
@@ -157,7 +157,7 @@ db.dinos.insertMany(
             named_by: "Dong Zhou and Zhang (1983)",
             species: "jiangbeiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/chungkingosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/chungkingosaurus.png"
         },
         {
             name: "Diplodocus",
@@ -170,7 +170,7 @@ db.dinos.insertMany(
             named_by: "Marsh (1878)",
             species: "longus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/diplodocus.png"
         },
         {
             name: "Dryptosaurus",
@@ -183,7 +183,7 @@ db.dinos.insertMany(
             named_by: "Cope (1866)",
             species: "aquilunguis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/dryptosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/dryptosaurus.png"
         },
         {
             name: "Einiosaurus",
@@ -196,7 +196,7 @@ db.dinos.insertMany(
             named_by: "Sampson  (1995)",
             species: "procurvicornis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/einiosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/einiosaurus.png"
         },
         {
             name: "Eoraptor",
@@ -209,7 +209,7 @@ db.dinos.insertMany(
             named_by: "Sereno Forster Rogers and Monetta (1993)",
             species: "lunensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/eoraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/eoraptor.png"
         },
         {
             name: "Fukuiraptor",
@@ -222,7 +222,7 @@ db.dinos.insertMany(
             named_by: "Azuma and Currie (2000)",
             species: "kitadaniensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/fukuiraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/fukuiraptor.png"
         },
         {
             name: "Gasosaurus",
@@ -235,7 +235,7 @@ db.dinos.insertMany(
             named_by: "Dong and Tang (1985)",
             species: "constructus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/gasosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/gasosaurus.png"
         },
         {
             name: "Giganotosaurus",
@@ -248,7 +248,7 @@ db.dinos.insertMany(
             named_by: "Coria and Salgado (1995)",
             species: "carolinii",
             link: "https://www.nhm.ac.uk/discover/dino-directory/giganotosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/giganotosaurus.png"
         },
         {
             name: "Gorgosaurus",
@@ -261,7 +261,7 @@ db.dinos.insertMany(
             named_by: "Lamb (1914)",
             species: "libratus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/gorgosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/gorgosaurus.png"
         },
         {
             name: "Hylaeosaurus",
@@ -274,7 +274,7 @@ db.dinos.insertMany(
             named_by: "Mantell (1833)",
             species: "armatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/hylaeosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/hylaeosaurus.png"
         },
         {
             name: "Iguanodon",
@@ -287,7 +287,7 @@ db.dinos.insertMany(
             named_by: "Boulenger and van Beneden (1881)",
             species: "bernissartensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/iguanodon.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/iguanodon.png"
         },
         {
             name: "Irritator",
@@ -300,7 +300,7 @@ db.dinos.insertMany(
             named_by: "Martill Cruickshank Frey Small and Clarke (1996)",
             species: "challengeri",
             link: "https://www.nhm.ac.uk/discover/dino-directory/irritator.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/irritator.png"
         },
         {
             name: "Juravenator",
@@ -313,7 +313,7 @@ db.dinos.insertMany(
             named_by: "G\u00f6hlich &amp; Chiappe (2006)",
             species: "starki",
             link: "https://www.nhm.ac.uk/discover/dino-directory/juravenator.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/juravenator.png"
         },
         {
             name: "Khaan",
@@ -326,7 +326,7 @@ db.dinos.insertMany(
             named_by: "Clark Norell and Barsbold (2001)",
             species: "mckennai",
             link: "https://www.nhm.ac.uk/discover/dino-directory/khaan.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/khaan.png"
         },
         {
             name: "Leptoceratops",
@@ -339,7 +339,7 @@ db.dinos.insertMany(
             named_by: "Brown (1914)",
             species: "gracilis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/leptoceratops.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/leptoceratops.png"
         },
         {
             name: "Liliensternus",
@@ -352,7 +352,7 @@ db.dinos.insertMany(
             named_by: "Huene (1934)",
             species: "liliensterni",
             link: "https://www.nhm.ac.uk/discover/dino-directory/liliensternus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/liliensternus.png"
         },
         {
             name: "Lurdusaurus",
@@ -365,7 +365,7 @@ db.dinos.insertMany(
             named_by: "Taquet &amp; Russell (1999)",
             species: "arenatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/lurdusaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/lurdusaurus.png"
         },
         {
             name: "Magyarosaurus",
@@ -378,7 +378,7 @@ db.dinos.insertMany(
             named_by: "Nopcsa (1915)",
             species: "dacus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/magyarosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/magyarosaurus.png"
         },
         {
             name: "Megalosaurus",
@@ -391,7 +391,7 @@ db.dinos.insertMany(
             named_by: "Ritgen (1826)",
             species: "bucklandii",
             link: "https://www.nhm.ac.uk/discover/dino-directory/megalosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/megalosaurus.png"
         },
         {
             name: "Metriacanthosaurus",
@@ -404,7 +404,7 @@ db.dinos.insertMany(
             named_by: "Walker (1964)",
             species: "parkeri",
             link: "https://www.nhm.ac.uk/discover/dino-directory/metriacanthosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/metriacanthosaurus.png"
         },
         {
             name: "Microceratus",
@@ -417,7 +417,7 @@ db.dinos.insertMany(
             named_by: "Bohlin (1953)",
             species: "gobiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/microceratus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/microceratus.png"
         },
         {
             name: "Microraptor",
@@ -430,7 +430,7 @@ db.dinos.insertMany(
             named_by: "Xu Zhou and Wang (2000)",
             species: "zhaoianus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/microraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/microraptor.png"
         },
         {
             name: "Monolophosaurus",
@@ -443,7 +443,7 @@ db.dinos.insertMany(
             named_by: "Zhao and Currie (1993)",
             species: "jiangi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/monolophosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/monolophosaurus.png"
         },
         {
             name: "Nemegtosaurus",
@@ -456,7 +456,7 @@ db.dinos.insertMany(
             named_by: "Nowinski (1971)",
             species: "mongoliensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/nemegtosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/nemegtosaurus.png"
         },
         {
             name: "Nomingia",
@@ -469,7 +469,7 @@ db.dinos.insertMany(
             named_by: "Barsbold Osm\u00f3lska Watabe Currie and Tsogtbaatar (2000)",
             species: "gobiensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/nomingia.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/nomingia.png"
         },
         {
             name: "Ouranosaurus",
@@ -482,7 +482,7 @@ db.dinos.insertMany(
             named_by: "Taquet (1976)",
             species: "nigeriensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/ouranosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/ouranosaurus.png"
         },
         {
             name: "Pachyrhinosaurus",
@@ -495,7 +495,7 @@ db.dinos.insertMany(
             named_by: "Sternberg (1950)",
             species: "canadensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/pachyrhinosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/pachyrhinosaurus.png"
         },
         {
             name: "Panoplosaurus",
@@ -508,7 +508,7 @@ db.dinos.insertMany(
             named_by: "Lambe (1919)",
             species: "mirus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/panoplosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/panoplosaurus.png"
         },
         {
             name: "Patagosaurus",
@@ -521,7 +521,7 @@ db.dinos.insertMany(
             named_by: "Bonaparte (1979)",
             species: "fariasi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/patagosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/patagosaurus.png"
         },
         {
             name: "Saltopus",
@@ -534,7 +534,7 @@ db.dinos.insertMany(
             named_by: "Huene (1910)",
             species: "elginensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/saltopus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/saltopus.png"
         },
         {
             name: "Sarcosaurus",
@@ -547,7 +547,7 @@ db.dinos.insertMany(
             named_by: "Andrews (1921)",
             species: "woodi",
             link: "https://www.nhm.ac.uk/discover/dino-directory/sarcosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/sarcosaurus.png"
         },
         {
             name: "Sinraptor",
@@ -560,7 +560,7 @@ db.dinos.insertMany(
             named_by: "Gao (1992)",
             species: "hepingensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/sinraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/sinraptor.png"
         },
         {
             name: "Stegosaurus",
@@ -573,7 +573,7 @@ db.dinos.insertMany(
             named_by: "Marsh (1877)",
             species: "armatus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/stegosaurus.png"
         },
         {
             name: "Styracosaurus",
@@ -586,7 +586,7 @@ db.dinos.insertMany(
             named_by: "Lambe (1913)",
             species: "albertensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/styracosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/styracosaurus.png"
         },
         {
             name: "Triceratops",
@@ -599,7 +599,7 @@ db.dinos.insertMany(
             named_by: "Marsh (1889)",
             species: "horridus",
             link: "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/triceratops.png"
         },
         {
             name: "Tyrannosaurus",
@@ -612,7 +612,7 @@ db.dinos.insertMany(
             named_by: "Osborn (1905)",
             species: "rex",
             link: "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/tyrannosaurus.png"
         },
         {
             name: "Velociraptor",
@@ -625,7 +625,7 @@ db.dinos.insertMany(
             named_by: "Osborn (1924)",
             species: "mongoliensis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/velociraptor.png"
         },
 
     ])
