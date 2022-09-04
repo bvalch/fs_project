@@ -2,11 +2,12 @@ import './DinoItem.css';
 
 const DinoItem = ({dino}) => {
     return (
-        <div>
+        <div className="card">
             <h1>{dino.name}</h1>
-            <p>{dino.type}</p>
             <img className="dino-image" src={dino.image} alt="There's no images here"></img>
-        </div>
+            <p>{dino.type}</p>
+            <p>{dino.period}</p>
+            </div>
     )
 }
 
