@@ -79,7 +79,7 @@ db.dinos.insertMany(
             named_by: "Marsh (1877)",
             species: "fragilis",
             link: "https://www.nhm.ac.uk/discover/dino-directory/allosaurus.html",
-            image: "images/acrocanthosaurus.png"
+            image: "images/allosaurus.png"
         },
         {
             name: "Arrhinoceratops",
