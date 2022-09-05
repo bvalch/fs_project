@@ -1,9 +1,9 @@
 .dino-image {
-    border: 2px solid greenyellow;
+    border: 2px solid black;
     border-radius: 10px;
     height: 250px;
     width: 300px;
-
+    
 }
 
 .card {
@@ -17,7 +17,11 @@
     min-height: 630px;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    
+    color: darkblue;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.dino-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
