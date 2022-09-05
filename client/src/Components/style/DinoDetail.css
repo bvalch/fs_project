@@ -1,0 +1,11 @@
+.dino-detail-image {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 450px;
+    width: 500px;
+}
+
+.detail-inner {
+    display: flex;
+    flex-direction: row;
+}
