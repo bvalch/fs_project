@@ -1,11 +1,55 @@
+
+.detail-container {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .dino-detail-image {
     border: 2px solid black;
     border-radius: 10px;
     height: 450px;
     width: 500px;
+    margin-left: 40px;
 }
 
 .detail-inner {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+
+.detail-text {
+    color: darkblue;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 1em;
+    
+}
+
+.detail-card {
+    border: solid 1px black;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-image: url("./component_images/card.png");
+    border-radius: 20px;
+}
+
+.dino-detail-title {
+    color: darkblue;
+}
+
+.button-a {
+   font-size: 18px;
+   margin: 0.25em;
+   background-color: darkblue;
+   border-radius: 7px;
+   width: 25%;
+   height: 40px;
+   color: azure;
 }
