@@ -21,17 +21,21 @@ const DinoDetail = ({ dino, onFavoriteSelect, onFavoriteDelete }) => {
     }
 
     return (
-        <div className="detail-card">
-            <h1 data-testid="dinoName" className='dino-detail-title'>{dino.name}</h1>
-            <div className='detail-inner'>
-                <img className="dino-detail-image" src={dino.image} alt="There's no images here"></img>
-                   <div className='dedtail_text'>
-                    <p>The {dino.name} had a {dino.diet} diet and was a {dino.species} species of Dinosaur.</p>
-                    <p>The period it lived during was the {dino.period} and inhabited {dino.lived_in}.</p>
-                    <p>The {dino.name} is a {dino.type} type of Dinosaur and is {dino.length} long.</p>
-                   </div>
+        <div className='detail-full'>
+            <div className='detail-container'>
+                <div className="detail-card">
+                    <h1 data-testid="dinoName" className='dino-detail-title'>{dino.name}</h1>
+                    <div className='detail-inner'>
+                        <img className="dino-detail-image" src={dino.image} alt="There's no images here"></img>
+                        <div className='detail-text'>
+                            <p>{dino.name} had a {dino.diet} diet and was a {dino.species} species of Dinosaur.</p>
+                            <p>It lived during the {dino.period} and inhabited {dino.lived_in}.</p>
+                            <p>{dino.name} was a {dino.type} type of Dinosaur and was {dino.length} long.</p>
+                        </div>
+                    </div>
+                    {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
+                </div>
             </div>
-            {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
         </div>
 
     )
