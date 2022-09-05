@@ -5,7 +5,7 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: forestgreen;
+    
     color: black;
     
     
@@ -24,6 +24,7 @@
 .link {
     text-decoration: none;
     font-family: 'ZCOOL KuaiLe', cursive;
+    color: darkblue;
     
 }
 

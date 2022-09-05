@@ -33,7 +33,7 @@ const DinoDetail = ({ dino, onFavoriteSelect, onFavoriteDelete }) => {
                             <p>{dino.name} was a {dino.type} type of Dinosaur and was {dino.length} long.</p>
                         </div>
                     </div>
-                    {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
+                    {dino.favorite ? <button onClick={handleButtonRemove} className='button-a'>Remove from Favourites</button> : <button onClick={handleButtonClick} className='button-a'>Add to favourite</button>}
                 </div>
             </div>
         </div>

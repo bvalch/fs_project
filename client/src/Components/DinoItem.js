@@ -30,7 +30,7 @@ const DinoItem = ({ dino, onFavoriteSelect,onFavoriteDelete }) => {
             <p>{dino.diet}</p>
             <h3 className='dino-title'>Period:</h3>
             <p data-testid="dinoPeriod">{dino.period}</p>
-            {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
+            {dino.favorite ? <button onClick={handleButtonRemove} className='button-b'>Remove from Favourites</button> : <button onClick={handleButtonClick} className='button-b'>Add to favourite</button>}
         </div>
 
     )
