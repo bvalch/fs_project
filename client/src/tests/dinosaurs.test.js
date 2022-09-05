@@ -52,4 +52,9 @@ describe('DinoItem', () => {
         expect(dinosaurType.textContent).toEqual("small theropod")
     });
 
+    // it('should show the dinosaur image', () => {
+    //     const dinosaurImage = container.getByTestId('dinoImage')
+    //     expect(dinosaurImage.imageContent).toEqual("images/velociraptor.png")
+    // })
+
 })

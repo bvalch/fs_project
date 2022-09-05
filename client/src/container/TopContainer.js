@@ -8,6 +8,7 @@ import RandomDino from '../Components/RandomDino';
 import FindDino from '../Components/FindDino';
 import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
+import FlappyDino from '../Components/FlappyDino';
 
 
 
@@ -90,6 +91,7 @@ const TopContainer = () => {
                 }
 
                 <Route path="/" element={<HomePage />} />
+                <Route path="/flappydino" element={<FlappyDino/>}/>
 
                 <Route path="/favdinos" element={<FavDino favDino={favDino} onFavoriteDelete={onFavoriteDelete}  />} />
             </Routes>

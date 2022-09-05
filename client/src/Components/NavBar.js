@@ -13,6 +13,7 @@ return(
         <li><Link to="/randomdino">Random Dino</Link> </li>
         <li><Link to="/dinolist">All Dinos</Link> </li> 
         <li><Link to="/favdinos">My Dinos</Link> </li> 
+        <li><Link to = "/flappydino">Flappy Dino</Link></li>
     </ul>
     
     )

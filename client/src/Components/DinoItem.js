@@ -23,7 +23,7 @@ const DinoItem = ({ dino, onFavoriteSelect,onFavoriteDelete }) => {
     return (
         <div className="card">
             <h1 data-testid="dinoName">{dino.name}</h1>
-            <img className="dino-image" src={dino.image} alt="There's no images here"></img>
+            <img className="dino-image" data-testid="dinoImage" src={dino.image} alt="There's no images here"></img>
             <h3>Type:</h3>
             <p data-testid="dinoType">{dino.type}</p>
             <h3>Diet:</h3>
