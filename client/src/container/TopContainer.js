@@ -8,6 +8,7 @@ import RandomDino from '../Components/RandomDino';
 import FindDino from '../Components/FindDino';
 import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
+import Quiz from '../Components/Quiz';
 
 
 
@@ -17,16 +18,21 @@ const TopContainer = () => {
     const [filteredDino, setFilteredDino] = useState([])
     const [filterTrigger,setFilterTrigger]=useState();
     const [favDino,setFavDino]=useState([]);
+    const [quizDinos, setQuizDinos] = useState([]);
+    const [trueDino, setTrueDino] = useState([])
 
     useEffect(() => {
         getDinos().then((data) => setDinos(data));
         getFavDinos().then((data)=>setFavDino(data));
     }, []);
 
-    // redundant at this stage,could be useful later
-    // const reloadData = () => {
-    //     getDinos().then((data) => setDinos(data))
-    // }
+    useEffect(() => {
+        if (quizDinos) {
+            const randomIndex = () => { return Math.floor(Math.random() * (quizDinos.length + 0) + 0) }
+            const randint = randomIndex()
+            setTrueDino(quizDinos[randint])
+        }
+    }, [quizDinos])
 
     const onRandomDino = () => {
         const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
@@ -65,6 +71,12 @@ const TopContainer = () => {
 
         }
 
+        const randomSeed = (randInt) => {
+            let doono = [];
+            randInt.forEach((int) => doono.push(dinos[int]));
+            setQuizDinos(doono)
+        }
+
 
     
 
@@ -90,6 +102,7 @@ const TopContainer = () => {
                 }
 
                 <Route path="/" element={<HomePage />} />
+                <Route path="/quiz" element={<Quiz dinos={dinos} randomSeed={randomSeed} quizDinos={quizDinos} trueDino={trueDino} />} />
 
                 <Route path="/favdinos" element={<FavDino favDino={favDino} onFavoriteDelete={onFavoriteDelete}  />} />
             </Routes>
