@@ -25,9 +25,9 @@ const DinoItem = ({ dino, onFavoriteSelect,onFavoriteDelete }) => {
             <h1 data-testid="dinoName">{dino.name}</h1>
             <img className="dino-image" src={dino.image} alt="There's no images here"></img>
             <h3>Type:</h3>
-            <p>{dino.type}</p>
+            <p data-testid="dinoType">{dino.type}</p>
             <h3>Diet:</h3>
-            <p>{dino.diet}</p>
+            <p data-testid="dinoDiet">{dino.diet}</p>
             <h3>Period:</h3>
             <p data-testid="dinoPeriod">{dino.period}</p>
             {dino.favorite ? <button onClick={handleButtonRemove}>Remove from Favourites</button> : <button onClick={handleButtonClick}>Add to favourite</button>}
