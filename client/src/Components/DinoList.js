@@ -1,5 +1,5 @@
 import DinoItem from "./DinoItem";
-import './DinoList.css';
+import './style/DinoList.css';
 
 const DinoList = ({dinos,onFavoriteSelect,onFavoriteDelete}) => {
     

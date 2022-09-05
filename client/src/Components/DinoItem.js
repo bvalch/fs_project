@@ -1,4 +1,4 @@
-import './DinoItem.css';
+import './style/DinoItem.css';
 import React from 'react'
 import { postFavDino,delFavDino } from "./favService"
 import { updateDino } from './dinoService';
