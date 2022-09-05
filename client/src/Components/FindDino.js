@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import DinoItem from './DinoItem';
+import DinoDetail from './DinoDetail';
 const FindDino = ({ dinos, onCriteriaSelected,onSearchInput,onFavoriteSelect,onFavoriteDelete }) => {
     const [filterType, setFilterType] = useState([]);
     const [filterDiet, setFilterDiet] = useState([]);
@@ -42,7 +42,7 @@ const FindDino = ({ dinos, onCriteriaSelected,onSearchInput,onFavoriteSelect,onF
         }
 
 
-        const showDinos = dinos.map((dino, index) => { return <DinoItem dino={dino} key={index} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} /> })
+        const showDinos = dinos.map((dino, index) => { return <DinoDetail dino={dino} key={index} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} /> })
 
 
 
@@ -54,7 +54,7 @@ const FindDino = ({ dinos, onCriteriaSelected,onSearchInput,onFavoriteSelect,onF
 
 
             // <p>filter page, should be able to filter data, also maybe have a search function based on name</p>
-            <>
+            <div>
                 <select defaultValue="" onChange={handleTypeChange}>
                     <option value="" >Filter by type</option>
                     <option value="all">Show All</option>
@@ -71,11 +71,12 @@ const FindDino = ({ dinos, onCriteriaSelected,onSearchInput,onFavoriteSelect,onF
 
                 </form>
 
-
+                <div>
                 {showDinos}
+                </div>
 
 
-            </>
+            </div>
         )
 
 

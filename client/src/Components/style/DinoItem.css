@@ -1,9 +1,9 @@
 .dino-image {
-    border: 2px solid greenyellow;
+    border: 2px solid black;
     border-radius: 10px;
     height: 250px;
     width: 300px;
-
+    
 }
 
 .card {
@@ -15,9 +15,24 @@
     flex-basis: 0;
     border-radius: 8px;
     min-height: 630px;
+    min-width: 320px;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    
+    color: darkblue;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.dino-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button-b {
+    font-size: 12px;
+    margin: 0.25em;
+    background-color: darkblue;
+    border-radius: 7px;
+    width: 33%;
+    height: 30px;
+    color: azure;
 }
 
