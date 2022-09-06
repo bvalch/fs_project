@@ -1,6 +1,5 @@
 import { Howl, Howler } from 'howler';
-import './Music.css';
-import MusicImage from "./style/component_images/sound.png"
+
 
 const MusicPlayer = () => {
 
