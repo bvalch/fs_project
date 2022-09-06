@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import background from './style/component_images/flappy-background.png';
+import flappy from './style/component_images/flappydino.png';
 
 const DINO_SIZE = 20;
 const GAME_WIDTH = 500;
@@ -111,11 +113,11 @@ export default FlappyDino;
 
 const Dino = styled.div`
   position: absolute;
-  background-color: red;
+  background-image: url(${flappy});
   height: ${(props) => props.size}px;
   width: ${(props) => props.size}px;
   top: ${(props) => props.top}px;
-  border-radius: 50%
+  border-radius: 50%;
   `;
 
 const Div = styled.div`
@@ -123,16 +125,19 @@ const Div = styled.div`
   width:100%;
   justify-content: center;
   `;
-  const P = styled.p`
-      color: white;
-      font-size: 24px;
-      margin-top: 0%;
-  `;
+
+
+const P = styled.p`
+  color: white;
+  font-size: 24px;
+  margin-top: 0%;
+ `;
+
 
 const GameBox = styled.div`
   height: ${(props) => props.height}px;
   width: ${(props) => props.width}px;
-  background-color: blue;
+  background-image:  url(${background});
   overflow: hidden;
   `;
 
