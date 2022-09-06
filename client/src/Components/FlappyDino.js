@@ -64,6 +64,7 @@ function FlappyDino() {
             (hasCollidedWithTopObstacle || hasCollidedWithBottomObstacle)
             ) {
             setGameHasStarted(false)
+            setScore(-2)
         }
     }, [dinoPosition, obstacleHeight, bottomObstacleHeight, obstacleLeft]);
 
@@ -126,7 +127,7 @@ const Div = styled.div`
       color: white;
       font-size: 24px;
       margin-top: 0%;
-  `
+  `;
 
 const GameBox = styled.div`
   height: ${(props) => props.height}px;
