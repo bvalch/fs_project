@@ -31,7 +31,7 @@ const NavBar = () => {
             <button className='button'>
                 <Link className='link' to="/flappydino">Flappy Dino</Link>
             </button>
-            
+
 
         </nav>
 
