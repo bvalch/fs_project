@@ -8,7 +8,11 @@ import RandomDino from '../Components/RandomDino';
 import FindDino from '../Components/FindDino';
 import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
+
+import FlappyDino from '../Components/FlappyDino';
+
 import Quiz from '../Components/Quiz';
+
 
 
 
@@ -102,7 +106,11 @@ const TopContainer = () => {
                 }
 
                 <Route path="/" element={<HomePage />} />
+ 
+                <Route path="/flappydino" element={<FlappyDino/>}/>
+
                 <Route path="/quiz" element={<Quiz dinos={dinos} randomSeed={randomSeed} quizDinos={quizDinos} trueDino={trueDino} />} />
+ 
 
                 <Route path="/favdinos" element={<FavDino favDino={favDino} onFavoriteDelete={onFavoriteDelete}  />} />
             </Routes>

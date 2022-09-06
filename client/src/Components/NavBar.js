@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 import './style/NavBar.css';
 
@@ -30,6 +31,7 @@ const NavBar = () => {
 
             <Link to="/quiz">Take a quiz</Link>
         </nav>
+
 
     )
 
