@@ -1,5 +1,5 @@
 import React from "react";
-import DinoItem from "./DinoItem";
+import DinoDetail from "./DinoDetail";
 
 
 const FavDino=({favDino,onFavoriteDelete})=>{
@@ -7,7 +7,7 @@ const FavDino=({favDino,onFavoriteDelete})=>{
 if(favDino===null || favDino.length===0){return (<p>Nothing here</p>)}else{
 
    const favDinoNodes=favDino.map((dino,index)=>{
-        return (<DinoItem dino={dino} key={index} onFavoriteDelete={onFavoriteDelete} />
+        return (<DinoDetail dino={dino} key={index} onFavoriteDelete={onFavoriteDelete} />
         )
     
     })

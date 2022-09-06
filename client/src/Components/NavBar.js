@@ -1,21 +1,38 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
+import './style/NavBar.css';
 
 
-const NavBar=()=>{
+const NavBar = () => {
 
-return(
-    
-    
-    <ul>
-        <li><Link to="/">Home</Link> </li>
-        <li><Link to="/finddino">Look up Dino</Link> </li>
-        <li><Link to="/randomdino">Random Dino</Link> </li>
-        <li><Link to="/dinolist">All Dinos</Link> </li> 
-        <li><Link to="/favdinos">My Dinos</Link> </li> 
-        <li><Link to = "/flappydino">Flappy Dino</Link></li>
-    </ul>
-    
+    return (
+
+
+        <nav className='navbar'>
+            <button className='button'>
+                <Link className='link' to="/">Home</Link>
+            </button>
+            <button className='button'>
+                <Link className='link' to="/finddino">Look up Dino</Link>
+            </button>
+            <button className='button'>
+                <Link className='link' to="/randomdino">Random Dino</Link>
+            </button>
+            <button className='button'>
+                <Link className='link' to="/dinolist">All Dinos</Link>
+            </button>
+            <button className='button'>
+                <Link className='link' to="/favdinos">My Dinos</Link>
+            </button>
+            <button className='button'>
+                <Link to="/quiz">Take a quiz</Link>
+            </button>
+
+            <Link to="/quiz">Take a quiz</Link>
+        </nav>
+
+
     )
 
 
