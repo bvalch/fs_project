@@ -1,5 +1,6 @@
 import { Howl, Howler } from 'howler';
 import './Music.css';
+import MusicImage from "./style/component_images/sound.png"
 
 const MusicPlayer = () => {
 
@@ -14,7 +15,7 @@ const MusicPlayer = () => {
     return (
         <>
             <button className='music'>
-                < img src="/sound.png" alt="image" onClick={() => {
+                < img className='musicpic'  src={MusicImage} alt="image" onClick={() => {
                     console.log(sessionStorage.getItem('isMusicOn'))
 
                     if (sessionStorage.getItem('isMusicOn') === "false") {

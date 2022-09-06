@@ -89,8 +89,9 @@ const TopContainer = () => {
 
         <>
             <NavBar />
-
+            <div>
             <MusicPlayer/>
+            </div>
 
             <Routes>
                 <Route path="/dinolist" element={<DinoList dinos={dinos} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />} />

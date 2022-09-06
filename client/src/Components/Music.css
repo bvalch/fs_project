@@ -1,9 +1,29 @@
+.musicpic {
+    height: 60px;
 
 
-button {
+
+
+}
+
+
+.quizform {
+    margin:auto;
+    justify-content: center;
+
+    text-align: center;
+    background: white;
+    width: 30vw;
+    border: 2px solid black;
+
+
+}
+
+
+.music {
 
     cursor: pointer;
     background-color: Transparent;
     border: none;
-    
+
 }
