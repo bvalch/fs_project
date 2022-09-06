@@ -1,6 +1,9 @@
 .home-container {
-    background-image: url("./component_images/leafy.gif");
-    height: 800px;
-    width: 500px;
+    display:block;
+    background-image: url("./component_images/leafy.gif") ;
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    min-width: 100vh;
     background-repeat: no-repeat;
+    
 }
