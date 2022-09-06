@@ -1,5 +1,5 @@
 import { Howl, Howler } from 'howler';
-import './Music.css';
+
 
 const MusicPlayer = () => {
 
