@@ -8,10 +8,10 @@ import RandomDino from '../Components/RandomDino';
 import FindDino from '../Components/FindDino';
 import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
-
 import FlappyDino from '../Components/FlappyDino';
+import KerimQuiz from '../Components/KerimQuiz';
+import MusicPlayer from '../Components/MusicPlayer';
 
-import Quiz from '../Components/Quiz';
 
 
 
@@ -90,6 +90,7 @@ const TopContainer = () => {
         <>
             <NavBar />
 
+            <MusicPlayer/>
 
             <Routes>
                 <Route path="/dinolist" element={<DinoList dinos={dinos} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />} />
@@ -109,7 +110,8 @@ const TopContainer = () => {
  
                 <Route path="/flappydino" element={<FlappyDino/>}/>
 
-                <Route path="/quiz" element={<Quiz dinos={dinos} randomSeed={randomSeed} quizDinos={quizDinos} trueDino={trueDino} />} />
+                {/* <Route path="/quiz" element={<Quiz dinos={dinos} randomSeed={randomSeed} quizDinos={quizDinos} trueDino={trueDino} />} /> */}
+                <Route path="/kerimquiz" element={<KerimQuiz dinos={dinos} />} />
  
 
                 <Route path="/favdinos" element={<FavDino favDino={favDino} onFavoriteDelete={onFavoriteDelete}  />} />

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /* background-image: url("./Components/style/component_images/leaf_background.png"); */
+  background-image: url("./Components/style/component_images/leaf_background.png");
   min-height: 100vh;
   
 }
