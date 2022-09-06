@@ -1,4 +1,4 @@
-import './Music.css';
+
 
 const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
