@@ -26,10 +26,9 @@ const NavBar = () => {
                 <Link className='link' to="/favdinos">My Dinos</Link>
             </button>
             <button className='button'>
-                <Link to="/quiz">Take a quiz</Link>
+                <Link className='link' to="/quiz">Take a quiz</Link>
             </button>
 
-            <Link to="/quiz">Take a quiz</Link>
         </nav>
 
 

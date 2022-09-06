@@ -1,10 +1,11 @@
 
 .detail-container {
-    text-align: center;
+    
     margin: 0;
     padding: 10px;
     display: flex;
     justify-content: center;
+    
 }
 
 .dino-detail-image {
@@ -38,6 +39,8 @@
     margin-right: 70px;
     background-image: url("./component_images/card.png");
     border-radius: 20px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 .dino-detail-title {
@@ -52,4 +55,66 @@
    width: 25%;
    height: 40px;
    color: azure;
+}
+
+@media screen and (min-width: 601px) {
+    .detail-text {
+      font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .detail-text {
+      font-size: 8px;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .dino-detail-image {
+        height: 450px;
+        width: 500px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .dino-detail-image {
+      height: 150px;
+      width: 200px;
+      margin-left: 0;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .button-a {
+      font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .button-a {
+      font-size: 8px;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .detail-card {
+      min-height: 500px;
+      min-width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .detail-card {
+        min-height: 300px;
+        min-width: 400px;
+      
+    }
 }
