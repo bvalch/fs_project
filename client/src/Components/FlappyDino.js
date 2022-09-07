@@ -76,8 +76,8 @@ function FlappyDino() {
             setGameHasStarted(true)
         } else if (event.keyCode == 32) {
             let newDinoPosition = dinoPosition - JUMP_HEIGHT;
-            if (newDinoPosition < 0) {
-                setDinoPosition(0)
+            if (newDinoPosition < 60) {
+                setDinoPosition(60)
             } else {
                 setDinoPosition(newDinoPosition)
             }
