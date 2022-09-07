@@ -17,13 +17,13 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
             if (entry.toLowerCase().includes(answer.toLowerCase())) {
 
                 setScore(score+1)
-
-                 console.log("correct!")
                 setAnswer('Correct')
                 return ButtonSound()
 
 
-            }else{setAnswer('Wrong')}
+            }else{
+                setAnswer('Wrong')
+            };
         })
     };
 
