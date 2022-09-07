@@ -1,0 +1,70 @@
+.dino-image-quiz {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 450px;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.quiz-button {
+   font-size: 20px;
+   margin: 0.25em;
+   background-color: rgb(250, 190, 101);
+   border-radius: 7px;
+   min-width: 10%;
+   height: 40px;
+   overflow: hidden;
+   white-space:normal; 
+   cursor: pointer; 
+}
+
+.quiz-text {
+    text-decoration: none;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: darkblue;
+    font-size: 25px;
+    color: azure;
+}
+
+.quiz-container {
+    
+    margin: 0;
+    
+}
+
+.quiz-button:focus {
+    background-color: olivedrab;
+    color: azure;
+}
+
+@media screen and (min-width: 601px) {
+    .dino-image-quiz {
+        height: 450px;
+        width: 500px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .dino-image-quiz {
+      height: 150px;
+      width: 200px;
+      margin-left: 0;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .quiz-button {
+      font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .quiz-button {
+      font-size: 8px;
+      
+    }
+}

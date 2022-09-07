@@ -1,4 +1,5 @@
 import React from 'react'
+import MusicPlayer from '../Components/MusicPlayer';
 
 import { Link } from 'react-router-dom'
 import './style/NavBar.css';
@@ -31,6 +32,7 @@ const NavBar = () => {
             <button className='button'>
                 <Link className='link' to="/flappydino">Flappy Dino</Link>
             </button>
+            <MusicPlayer/>
 
 
         </nav>
