@@ -5,7 +5,7 @@ import ButtonSound from "./ButtonSound";
 
 const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
-    const [score, setScore] = useState(5);
+    const [score, setScore] = useState(0);
     const [result,setResult]=useState([])
 
     const dietAnswers = ["Omnivorous", "Carnivorous", "Herbivorous"];
@@ -44,9 +44,9 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
             <div className='quiz-container'>
                 {<img className="dino-image-quiz" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>} 
                 <br></br>
-                <div className='score'>You're score is {score}</div>
+                <div className='score'>Your score: {score}</div>
                 <br></br>
-                <div className='answer'>You are {result}</div>
+                <div className='answer'>You are... {result}</div>
                 
 
 
