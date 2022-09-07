@@ -25,9 +25,12 @@ const TopContainer = () => {
     const [quizDinos, setQuizDinos] = useState([]);
     const [trueDino, setTrueDino] = useState([])
 
-    useEffect(() => {
+    useEffect(  () => {
+        const randomInt=(Math.floor(Math.random() * (50 + 0) + 0))
         getDinos().then((data) => setDinos(data));
         getFavDinos().then((data)=>setFavDino(data));
+        getDinos().then((data)=>setRandomDino([data[randomInt]]))         
+        
     }, []);
 
     useEffect(() => {
@@ -36,13 +39,13 @@ const TopContainer = () => {
             const randint = randomIndex()
             setTrueDino(quizDinos[randint])
         }
-    }, [quizDinos])
+    }, [quizDinos]);
 
     const onRandomDino = () => {
         const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
         const randint = randomIndex()
         setRandomDino([dinos[randint]])
-    }
+    };
 
 
     const onCriteriaSelected = (filterCriteria) => {
@@ -53,27 +56,27 @@ const TopContainer = () => {
             setFilterTrigger(true) 
         }
 
-    }
+    };
 
     const onSearchInput=async (searchTerm)=>{
         const searchDino=dinos.filter((dino)=>{return dino.name.toLowerCase().includes(searchTerm.toLowerCase())})
         await setFilteredDino(searchDino)
         await setFilterTrigger(true)
     
-    }
+    };
         const onFavoriteSelect=async(dinoToFav)=>{   
         if(favDino.length===0){setFavDino([dinoToFav])}else{
          const favDinoCopy=[...favDino]
          await favDinoCopy.push(dinoToFav)
          setFavDino(favDinoCopy)
         }
-        }
+        };
         const onFavoriteDelete=(id)=>{
         console.log('hello')
          const filterFavDinoArr=favDino.filter((dino)=>dino._id !== id)
          setFavDino(filterFavDinoArr)   
 
-        }
+        };
 
         const randomSeed = (randInt) => {
             let doono = [];

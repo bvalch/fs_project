@@ -24,7 +24,9 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
                 <h2 className="quiz-text">What's the dinosaurs name?  </h2>
                 {testDinos.map((dino, index) => {
                     return (
+
                         <button  className="quiz-button"  onClick={() => checkAnswer(dino.name)} value={dino.name} key={index}>{dino.name}</button>
+
                     )
                 })}
                 <h2 className="quiz-text">Was it...?</h2>
