@@ -13,5 +13,5 @@ export const updateDino = (id, dinoToUpdate) => {
 
     }).then(res => res.json()))
 
-}
+};
 

@@ -29,7 +29,7 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
 
     const handleAnswerClick=(e)=>{
-        
+
         checkAnswer(e.target.value)
     }
 
