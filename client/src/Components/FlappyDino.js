@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import background from './style/component_images/flappy-background.png';
-import flappy from './style/component_images/flappydino.png';
+import bark from './style/component_images/bark.png';
+import scales from './style/component_images/scales.png';
 
 const DINO_SIZE = 20;
 const GAME_WIDTH = 500;
@@ -76,8 +77,8 @@ function FlappyDino() {
             setGameHasStarted(true)
         } else if (event.keyCode == 32) {
             let newDinoPosition = dinoPosition - JUMP_HEIGHT;
-            if (newDinoPosition < 60) {
-                setDinoPosition(60)
+            if (newDinoPosition < 70) {
+                setDinoPosition(70)
             } else {
                 setDinoPosition(newDinoPosition)
             }
@@ -106,7 +107,7 @@ function FlappyDino() {
                 <Dino size={DINO_SIZE} top={dinoPosition} />
                 
             </GameBox>
-            <Span>{score}</Span>
+            <Span>Score : {score}</Span>
             
         </Div>
         
@@ -118,7 +119,7 @@ export default FlappyDino;
 
 const Dino = styled.div`
   position: absolute;
-  background-image: url(${flappy});
+  background-image:  url(${scales});
   height: ${(props) => props.size}px;
   width: ${(props) => props.size}px;
   top: ${(props) => props.top}px;
@@ -138,9 +139,12 @@ const Div = styled.div`
 
 
 const Span = styled.span`
-  color: white;
   font-size: 24px;
- 
+  font-family: 'ZCOOL KuaiLe', cursive;
+  
+  margin-left: 0.5em;
+  height: 50px;
+  
  `;
 
 
@@ -149,12 +153,13 @@ const GameBox = styled.div`
   width: ${(props) => props.width}px;
   background-image:  url(${background});
   overflow: hidden;
+  border: 8px solid darkgreen;
   `;
 
 const Obstacle = styled.div`
   position: relative;
   top: ${(props) => props.top}px;
-  background-color: chocolate;
+  background-image:  url(${bark});
   width:${(props) => props.width}px;
   height: ${(props) => props.height}px;
   left: ${(props) => props.left}px;
