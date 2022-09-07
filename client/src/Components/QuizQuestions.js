@@ -6,25 +6,28 @@ import ButtonSound from "./ButtonSound";
 const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
     const [score, setScore] = useState(5);
-    const [answer,setAnswer]=useState([])
+    const [result,setResult]=useState([])
 
     const dietAnswers = ["Omnivorous", "Carnivorous", "Herbivorous"];
     const eraAnswers = ["Triassic", "Jurassic", "Cretaceous"];
 
-    const checkAnswer = (answer) => {
+    const checkAnswer = (ai) => {
         let testthing = Object.values(testDinos[correctAnswerIndex])
-        testthing.map((entry, index) => {
-            if (entry.toLowerCase().includes(answer.toLowerCase())) {
+        let correct = false;
 
-                setScore(score+1)
-                setAnswer('Correct')
-                return ButtonSound()
-
-
-            }else{
-                setAnswer('Wrong')
+        testthing.forEach((entry) => {
+            if (entry.toLowerCase().includes(ai.toLowerCase())) {
+                correct = true;
             };
         })
+
+        if (correct) {
+            setScore(score+1);
+            setResult('Correct');
+            ButtonSound();
+        } else {
+            setResult('Wrong')
+        }
     };
 
 
@@ -35,7 +38,7 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
 
 
-    if (testDinos.length != 0) {
+    if (testDinos.length !== 0) {
 
         return (
             <div className='quiz-container'>
@@ -43,7 +46,7 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
                 <br></br>
                 <div className='score'>You're score is {score}</div>
                 <br></br>
-                <div className='answer'>You are {answer}</div>
+                <div className='answer'>You are {result}</div>
                 
 
 
