@@ -86,8 +86,11 @@ function FlappyDino() {
 
 
     return (
+        
         <Div >
+        
             <GameBox height={GAME_HEIGHT} width={GAME_WIDTH}>
+            
                 <Obstacle
                     top={0}
                     width={OBSTACLE_WIDTH}
@@ -101,10 +104,12 @@ function FlappyDino() {
                     left={obstacleLeft}
                 />
                 <Dino size={DINO_SIZE} top={dinoPosition} />
-                <P>{score}</P>
+                
             </GameBox>
+            <Span>{score}</Span>
             
         </Div>
+        
     );
 }
 
@@ -124,13 +129,18 @@ const Div = styled.div`
   display: flex;
   width:100%;
   justify-content: center;
+  & span{
+    font-size: 44px;
+    color: white;
+    margin-top: 10%;
+  }
   `;
 
 
-const P = styled.p`
+const Span = styled.span`
   color: white;
   font-size: 24px;
-  margin-top: 0%;
+ 
  `;
 
 
@@ -144,7 +154,7 @@ const GameBox = styled.div`
 const Obstacle = styled.div`
   position: relative;
   top: ${(props) => props.top}px;
-  background-color: purple;
+  background-color: chocolate;
   width:${(props) => props.width}px;
   height: ${(props) => props.height}px;
   left: ${(props) => props.left}px;
