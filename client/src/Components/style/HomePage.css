@@ -7,3 +7,28 @@
     background-repeat: no-repeat;
     
 }
+
+.home-text-one {
+    font-size: 100px;
+    color: chartreuse;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin-top: 25%;
+   
+
+}
+
+.home-text-two {
+    font-size: 100px;
+    color: chartreuse;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+   
+
+}
+
+.home-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
