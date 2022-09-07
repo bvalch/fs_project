@@ -1,18 +1,19 @@
-
+import ButtonSound from "./ButtonSound";
 
 const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
-    const dietAnswers = ["Omnivorous", "Carnivorous", "Herbivorous"];
+    const dietAnswers = ["omnivorous", "carnivorous", "herbivorous"];
     const eraAnswers = ["Triassic", "Jurassic", "Cretaceous"]
 
     const checkAnswer = (answer) => {
         let testthing = Object.values(testDinos[correctAnswerIndex])
-        testthing.map((entry, index) => {
+        testthing.map((entry) => {
             if (entry.includes(answer)) { 
                 
                 // insert correct answer animations here
 
-                return console.log("correct!") }
+                return ButtonSound()
+            }
         })
     }
 
