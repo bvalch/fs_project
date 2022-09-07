@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import QuizQuestions from "./QuizQuestions"
 import MusicPlayer from './MusicPlayer';
+import './style/KerimQuiz.css';
 
 
 const Quiz = ({ dinos }) => {
@@ -10,7 +11,7 @@ const Quiz = ({ dinos }) => {
 
     const navigate = useNavigate ()
 
-    if (dinos.length != 0) {
+    if (dinos.length !== 0) {
 
         const getFourRandomDinosaurs = () => {
             const fourRandomDinos = new Set();
