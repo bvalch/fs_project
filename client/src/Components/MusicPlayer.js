@@ -1,4 +1,4 @@
-import { Howl, Howler } from 'howler';
+import { Howl } from 'howler';
 
 
 const MusicPlayer = () => {
@@ -15,7 +15,7 @@ const MusicPlayer = () => {
         <>
             <button className='music'>
                 < img src="/sound.png" alt="image" onClick={() => {
-                    console.log(sessionStorage.getItem('isMusicOn'))
+
 
                     if (sessionStorage.getItem('isMusicOn') === "false") {
                         sessionStorage.setItem('isMusicOn', true);
@@ -34,6 +34,6 @@ const MusicPlayer = () => {
 
 }
 
-export default MusicPlayer
+export default MusicPlayer;
 
 
