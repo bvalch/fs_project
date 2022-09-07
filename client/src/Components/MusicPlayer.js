@@ -1,3 +1,4 @@
+
 import { Howl, Howler } from 'howler';
 import './style/NavBar.css';
 
@@ -15,6 +16,7 @@ const MusicPlayer = () => {
 
     return (
         <>
+
             <button className='button-music'>
                 < img className='music' src={require('./style/component_images/sound.png')} alt="nothing here" onClick={() => {
                     console.log(sessionStorage.getItem('isMusicOn'))
@@ -36,6 +38,6 @@ const MusicPlayer = () => {
 
 }
 
-export default MusicPlayer
+export default MusicPlayer;
 
 

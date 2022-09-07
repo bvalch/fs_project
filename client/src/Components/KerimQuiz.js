@@ -6,7 +6,7 @@ import './style/KerimQuiz.css';
 
 
 const Quiz = ({ dinos }) => {
-    const [score, setScore] = useState(0);
+    
    
 
     const navigate = useNavigate();
