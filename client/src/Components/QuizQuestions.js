@@ -3,18 +3,18 @@
 const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
     const dietAnswers = ["Omnivorous", "Carnivorous", "Herbivorous"];
-    const eraAnswers = ["Triassic", "Jurassic", "Cretaceous"]
+    const eraAnswers = ["Triassic", "Jurassic", "Cretaceous"];
 
     const checkAnswer = (answer) => {
         let testthing = Object.values(testDinos[correctAnswerIndex])
         testthing.map((entry, index) => {
-            if (entry.includes(answer)) { 
+            if (entry.toLowerCase().includes(answer.toLowerCase())) { 
                 
                 // insert correct answer animations here
 
                 return console.log("correct!") }
         })
-    }
+    };
 
     if (testDinos.length != 0) {
 
@@ -47,5 +47,5 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
     }
 }
 
-export default QuizQuestions
+export default QuizQuestions;
 
