@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 600px) {
     .button {
-      font-size: 10px;
+      font-size: 7px;
     }
 }
 
@@ -68,4 +68,27 @@
     width: 15%;
     height: 30px;
     color: azure;
+}
+
+@media screen and (min-width: 601px) {
+  .random-button {
+    font-size: 18px;
+    margin: 0.25em;
+    background-color: darkblue;
+    border-radius: 7px;
+    width: 15%;
+    height: 30px;
+    color: azure;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .random-button {
+    font-size: 8px;
+    border-radius: 7px;
+    width: 15%;
+    height: 30px;
+    color: azure;
+  }
 }
