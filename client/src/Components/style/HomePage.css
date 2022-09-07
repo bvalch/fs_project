@@ -7,3 +7,82 @@
     background-repeat: no-repeat;
     
 }
+
+.home-text-one {
+    font-size: 100px;
+    color: chartreuse;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin-top: 25%;
+   
+
+}
+
+.home-text-two {
+    font-size: 100px;
+    color: chartreuse;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+   
+
+}
+
+.home-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+@media screen and (min-width: 601px) {
+    .home-text-one {
+      font-size: 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .home-text-one {
+      font-size: 60px;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .home-text-two {
+      font-size: 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .home-text-two {
+      font-size: 60px;
+      
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .home-container {
+        display: block;
+        background-image: url("./component_images/leafy.gif") ;
+        background-size: 100vw 100vh;
+        min-height: 100vh;
+        min-width: 100vh;
+        background-repeat: no-repeat;
+        
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .home-container {
+        display: block;
+        background-image: url("./component_images/leafy.gif") ;
+        background-size: 100vw 100vh;
+        min-height: 100%;
+        min-width: 100%;
+        background-repeat: no-repeat;
+        
+    }
+}
+

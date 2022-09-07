@@ -12,8 +12,6 @@ const ButtonSound = () => {
     sound.play();
 
 
-    return console.log('roar!')
-
 }
 
 export default ButtonSound;

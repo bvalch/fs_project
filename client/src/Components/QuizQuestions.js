@@ -17,18 +17,19 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
             if (entry.toLowerCase().includes(answer.toLowerCase())) {
 
                 setScore(score+1)
-
-                 console.log("correct!")
                 setAnswer('Correct')
                 return ButtonSound()
 
 
-            }else{setAnswer('Wrong')}
+            }else{
+                setAnswer('Wrong')
+            };
         })
     };
 
 
     const handleAnswerClick=(e)=>{
+
         checkAnswer(e.target.value)
     }
 
@@ -38,11 +39,11 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
         return (
             <div className='quiz-container'>
-                {<img className="dino-image" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>} 
+                {<img className="dino-image-quiz" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>} 
                 <br></br>
-                {score}
+                <div className='score'>You're score is {score}</div>
                 <br></br>
-                {answer}
+                <div className='answer'>You are {answer}</div>
                 
 
 

@@ -60,3 +60,12 @@
 
 }
 
+.random-button {
+    font-size: 18px;
+    margin: 0.25em;
+    background-color: darkblue;
+    border-radius: 7px;
+    width: 15%;
+    height: 30px;
+    color: azure;
+}

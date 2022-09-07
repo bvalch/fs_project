@@ -64,7 +64,6 @@ const TopContainer = () => {
         };
 
         const onFavoriteDelete=(id)=>{
-        console.log('hello')
          const filterFavDinoArr=favDino.filter((dino)=>dino._id !== id)
          setFavDino(filterFavDinoArr)   
 

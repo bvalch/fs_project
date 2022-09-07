@@ -19,7 +19,7 @@ const MusicPlayer = () => {
 
             <button className='button-music'>
                 < img className='music' src={require('./style/component_images/sound.png')} alt="nothing here" onClick={() => {
-                    console.log(sessionStorage.getItem('isMusicOn'))
+                    
 
                     if (sessionStorage.getItem('isMusicOn') === "false") {
                         sessionStorage.setItem('isMusicOn', true);
