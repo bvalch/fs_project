@@ -29,7 +29,6 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
 
     const handleAnswerClick=(e)=>{
-        e.currentTarget.disabled = true
         checkAnswer(e.target.value)
     }
 
