@@ -38,13 +38,13 @@ const Quiz = ({ dinos }) => {
         <>
             <QuizQuestions testDinos={getFourRandomDinosaurs()} correctAnswerIndex={selectCorrectAnswerIndex()} />
             <p>
-            <button onClick={() => navigate('/kerimquiz')}>Next Quiz!</button>
+            <button className='quiz-button' onClick={() => navigate('/kerimquiz')}>Next Quiz!</button>
             
             </p>
             <p>
                 {/* <MusicPlayer /> */}
             </p>
-            </>
+        </>
 
         )
     }

@@ -19,29 +19,29 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
     if (testDinos.length != 0) {
 
         return (
-            <>
-                {<img className="dino-image" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>}
-                <h2>What's the dinosaurs name?  </h2>
+            <div className='quiz-container'>
+                {<img className="dino-image-quiz" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>}
+                <h2 className="quiz-text">What's the dinosaurs name?  </h2>
                 {testDinos.map((dino, index) => {
                     return (
-                        <button onClick={() => checkAnswer(dino.name)} value={dino.name} key={index}>{dino.name}</button>
+                        <button  className="quiz-button"  onClick={() => checkAnswer(dino.name)} value={dino.name} key={index}>{dino.name}</button>
                     )
                 })}
-                <h2>Was it...?</h2>
+                <h2 className="quiz-text">Was it...?</h2>
                 {dietAnswers.map((dietAnswer, index) => {
                     return (
-                        <button onClick={() => checkAnswer(dietAnswer)} value={dietAnswer} key={index}>{dietAnswer}</button>
+                        <button className="quiz-button" onClick={() => checkAnswer(dietAnswer)} value={dietAnswer} key={index}>{dietAnswer}</button>
                     )
                 })}
-                <h2>Which era was it from..?</h2>
+                <h2 className="quiz-text">Which era was it from..?</h2>
                 {eraAnswers.map((era, index) => {
                     return (
-                        <button onClick={() => checkAnswer(era)} value={era} key={index}>{era}</button>
+                        <button className="quiz-button" onClick={() => checkAnswer(era)} value={era} key={index}>{era}</button>
                     )
                 })}
-            </>
+            </div>
         )
-    }
+    } 
     else {
         return (<p>404</p>)
     }

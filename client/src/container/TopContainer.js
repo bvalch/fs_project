@@ -10,7 +10,7 @@ import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
 import FlappyDino from '../Components/FlappyDino';
 import KerimQuiz from '../Components/KerimQuiz';
-import MusicPlayer from '../Components/MusicPlayer';
+
 
 
 
@@ -90,7 +90,7 @@ const TopContainer = () => {
         <>
             <NavBar />
 
-            <MusicPlayer/>
+            
 
             <Routes>
                 <Route path="/dinolist" element={<DinoList dinos={dinos} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />} />

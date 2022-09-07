@@ -6,8 +6,6 @@
     position: relative;
     padding: 0.5rem 0rem;
     color: black;
-    
-    
 }
 
 .button {
@@ -39,6 +37,21 @@
     .button {
       font-size: 10px;
     }
+}
+
+.music {
+  transform: scaleX(-1);
+  background-color: transparent;
+  max-height: 55px;
+  max-width: 55px;
+  cursor: pointer;
+
+
+}
+
+.button-music {
+  background-color: transparent;
+  border: none;
 }
 
 
