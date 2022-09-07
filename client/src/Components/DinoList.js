@@ -7,7 +7,6 @@ const DinoList = ({dinos,onFavoriteSelect,onFavoriteDelete}) => {
         return (<DinoItem dino={dino} key={index} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete}/>
         )
     });
-    // console.log(dinosList)
 
     return (
 
