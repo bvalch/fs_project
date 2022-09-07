@@ -8,6 +8,11 @@ import RandomDino from '../Components/RandomDino';
 import FindDino from '../Components/FindDino';
 import HomePage from '../Components/HomePage';
 import FavDino from '../Components/FavDino';
+import FlappyDino from '../Components/FlappyDino';
+import KerimQuiz from '../Components/KerimQuiz';
+
+
+
 
 
 
@@ -18,21 +23,21 @@ const TopContainer = () => {
     const [filterTrigger,setFilterTrigger]=useState();
     const [favDino,setFavDino]=useState([]);
 
-    useEffect(() => {
+    useEffect(  () => {
+        const randomInt=(Math.floor(Math.random() * (50 + 0) + 0))
         getDinos().then((data) => setDinos(data));
         getFavDinos().then((data)=>setFavDino(data));
+        getDinos().then((data)=>setRandomDino([data[randomInt]]))         
+        
     }, []);
 
-    // redundant at this stage,could be useful later
-    // const reloadData = () => {
-    //     getDinos().then((data) => setDinos(data))
-    // }
+    
 
     const onRandomDino = () => {
         const randomIndex = () => { return Math.floor(Math.random() * (dinos.length + 0) + 0) }
         const randint = randomIndex()
         setRandomDino([dinos[randint]])
-    }
+    };
 
 
     const onCriteriaSelected = (filterCriteria) => {
@@ -42,31 +47,30 @@ const TopContainer = () => {
             setFilteredDino(filteredByCriteria)
             setFilterTrigger(true) 
         }
-
-    }
+    };
 
     const onSearchInput=async (searchTerm)=>{
         const searchDino=dinos.filter((dino)=>{return dino.name.toLowerCase().includes(searchTerm.toLowerCase())})
         await setFilteredDino(searchDino)
         await setFilterTrigger(true)
     
-    }
+    };
         const onFavoriteSelect=async(dinoToFav)=>{   
         if(favDino.length===0){setFavDino([dinoToFav])}else{
          const favDinoCopy=[...favDino]
          await favDinoCopy.push(dinoToFav)
          setFavDino(favDinoCopy)
         }
-        }
+        };
+
         const onFavoriteDelete=(id)=>{
         console.log('hello')
          const filterFavDinoArr=favDino.filter((dino)=>dino._id !== id)
          setFavDino(filterFavDinoArr)   
 
-        }
+        };
 
-
-    
+        
 
 
     return (
@@ -74,6 +78,7 @@ const TopContainer = () => {
         <>
             <NavBar />
 
+            
 
             <Routes>
                 <Route path="/dinolist" element={<DinoList dinos={dinos} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />} />
@@ -90,6 +95,12 @@ const TopContainer = () => {
                 }
 
                 <Route path="/" element={<HomePage />} />
+ 
+                <Route path="/flappydino" element={<FlappyDino/>}/>
+
+                {/* <Route path="/quiz" element={<Quiz dinos={dinos} randomSeed={randomSeed} quizDinos={quizDinos} trueDino={trueDino} />} /> */}
+                <Route path="/kerimquiz" element={<KerimQuiz dinos={dinos} />} />
+ 
 
                 <Route path="/favdinos" element={<FavDino favDino={favDino} onFavoriteDelete={onFavoriteDelete}  />} />
             </Routes>

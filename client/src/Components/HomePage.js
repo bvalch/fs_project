@@ -1,9 +1,16 @@
+import './style/HomePage.css';
+
 const HomePage=()=>{
 
 
 
 return (
-    <p> Here be the home page</p>
+    <div className="home-container">
+        <div className="home-card">
+            
+        </div>
+
+    </div>
     )
 };
 

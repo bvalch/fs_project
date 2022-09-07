@@ -5,10 +5,7 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    
     color: black;
-    
-    
 }
 
 .button {
@@ -18,7 +15,8 @@
    border-radius: 7px;
    width: 100%;
    height: 60px;
-   
+   overflow: hidden;
+   white-space:normal;   
 }
 
 .link {
@@ -28,6 +26,37 @@
     
 }
 
+@media screen and (min-width: 601px) {
+    .button {
+      font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+      font-size: 10px;
+    }
+}
+
+.music {
+  transform: scaleX(-1);
+  background-color: transparent;
+  max-height: 55px;
+  max-width: 55px;
+  cursor: pointer;
 
 
+}
+
+.button-music {
+  background-color: transparent;
+  border: none;
+}
+
+.emptyfavs{
+  font-size:40px;
+  color: white;
+
+}
 

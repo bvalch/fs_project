@@ -16,7 +16,16 @@ describe('DinoItem', () => {
 
     const testDino={
         name: "Velociraptor",
-        period: "Early Jurassic 199-189 million years ago"
+        diet: "carnivorous",
+        period: "Late Cretaceous 74-70 million years ago",
+        lived_in: "Mongolia",
+        type: "small theropod",
+        length: "1.8m",
+        taxonomy: "Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Maniraptora Paraves Eumaniraptora Dromaeosauridae",
+        named_by: "Osborn (1924)",
+        species: "mongoliensis",
+        link: "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
+        image: "images/velociraptor.png"
     };
 
     beforeEach(() => {
@@ -30,7 +39,22 @@ describe('DinoItem', () => {
 
     it('should return dinosaur period', () => {
         const dinosaurPeriod = container.getByTestId("dinoPeriod")
-        expect(dinosaurPeriod.textContent).toEqual("Early Jurassic 199-189 million years ago")
+        expect(dinosaurPeriod.textContent).toEqual("Late Cretaceous 74-70 million years ago")
     });
+
+    it('should return the dinosaurs diet', () => {
+        const dinosaurDiet = container.getByTestId("dinoDiet")
+        expect(dinosaurDiet.textContent).toEqual("carnivorous")
+    });
+
+    it('should return the dinosaurs type', () => {
+        const dinosaurType = container.getByTestId("dinoType")
+        expect(dinosaurType.textContent).toEqual("small theropod")
+    });
+
+    // it('should show the dinosaur image', () => {
+    //     const dinosaurImage = container.getByTestId('dinoImage')
+    //     expect(dinosaurImage.imageContent).toEqual("images/velociraptor.png")
+    // })
 
 })

@@ -14,11 +14,11 @@ export const postFavDino = (payload) => {
     }).then(res => res.json())
 
 
-}
+};
 
 export const delFavDino=(id)=>{
     return fetch(bURL+id,{
     method:'DELETE'})
 
-}
+};
 
