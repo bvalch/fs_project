@@ -46,8 +46,6 @@ const createRouter = function (collection) {
 
     const updateDino = req.body;
     const id = ObjectId(req.params.id)
-    console.log(id)
-    console.log(updateDino)
     collection.updateOne({_id:id},{$set:updateDino})
     .then((result) => res.json(result))
             .catch((err) => {
