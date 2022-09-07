@@ -22,13 +22,14 @@
     text-decoration: none;
     font-family: 'ZCOOL KuaiLe', cursive;
     color: darkblue;
-    font-size: 25px;
+    font-size: 21px;
     color: azure;
 }
 
 .quiz-container {
     
     margin: 0;
+
     
 }
 
@@ -59,7 +60,7 @@
 
 .score {
     color: azure;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'ZCOOL KuaiLe', cursive;
 }
 
