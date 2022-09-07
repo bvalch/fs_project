@@ -3,7 +3,8 @@ import DinoDetail from './DinoDetail';
 
 
 const RandomDino = ({ randomDino,onRandomDino,onFavoriteSelect,onFavoriteDelete }) => {
-    if (randomDino === null) { <p>Loading</p> } else {
+    if (randomDino === null)  { <p>Loading</p> } else {
+        
 
         const rDino = randomDino.map((dino, index) => {
             return <DinoDetail key={index} dino={dino} onFavoriteSelect={onFavoriteSelect} onFavoriteDelete={onFavoriteDelete} />
