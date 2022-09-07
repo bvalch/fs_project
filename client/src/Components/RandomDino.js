@@ -1,5 +1,6 @@
 import React from 'react';
 import DinoDetail from './DinoDetail';
+import './style/NavBar.css';
 
 
 const RandomDino = ({ randomDino,onRandomDino,onFavoriteSelect,onFavoriteDelete }) => {
@@ -19,7 +20,7 @@ const RandomDino = ({ randomDino,onRandomDino,onFavoriteSelect,onFavoriteDelete 
         return (
             <div>
                 
-                <button onClick={handleRandomDino}>Show me a random Dino!</button>
+                <button className='random-button' onClick={handleRandomDino}>Show me a random Dino!</button>
                 <div>
                 {rDino}
                 </div>
