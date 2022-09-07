@@ -29,6 +29,7 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
 
     const handleAnswerClick=(e)=>{
+
         checkAnswer(e.target.value)
     }
 
@@ -38,11 +39,11 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
 
         return (
             <div className='quiz-container'>
-                {<img className="dino-image" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>} 
+                {<img className="dino-image-quiz" src={testDinos[correctAnswerIndex].image} alt="There's no images here"></img>} 
                 <br></br>
-                {score}
+                <div className='score'>You're score is {score}</div>
                 <br></br>
-                {answer}
+                <div className='answer'>You are {answer}</div>
                 
 
 

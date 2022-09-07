@@ -1,8 +1,8 @@
 .dino-image-quiz {
     border: 2px solid black;
     border-radius: 10px;
-    height: 450px;
-    width: 700px;
+    height: 300px;
+    width: 500px;
     margin-left: 40px;
 }
 
@@ -67,4 +67,16 @@
       font-size: 8px;
       
     }
+}
+
+.score {
+    color: azure;
+    font-size: 60px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.answer {
+    color: azure;
+    font-size: 40px;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
