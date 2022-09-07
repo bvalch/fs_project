@@ -11,12 +11,12 @@ const QuizQuestions = ({ testDinos, correctAnswerIndex }) => {
     const dietAnswers = ["Omnivorous", "Carnivorous", "Herbivorous"];
     const eraAnswers = ["Triassic", "Jurassic", "Cretaceous"];
 
-    const checkAnswer = (ai) => {
+    const checkAnswer = (answer) => {
         let testthing = Object.values(testDinos[correctAnswerIndex])
         let correct = false;
 
         testthing.forEach((entry) => {
-            if (entry.toLowerCase().includes(ai.toLowerCase())) {
+            if (entry.toLowerCase().includes(answer.toLowerCase())) {
                 correct = true;
             };
         })
